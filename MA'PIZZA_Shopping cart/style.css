@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Patrick Hand', cursive;
+
+}
+h3 {
+	cursor: pointer;
+}
+h3:before {
+	content: attr(data-count);
+	position: absolute;
+	color: white;
+	right: 16px;
+	font-size: 15px;
+	text-align: center;
+	top: -12px;
+	width: 20px;
+	height: 20px;
+	background: red;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+header {
+	background-image: url('images/c1_pizza.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 170px;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(10, 10, 10, 0.3);
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px 60px 0 60px;
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+nav li span {
+	padding-left: 5px;
+}
+
+li a {
+	padding: 5px;
+	background-color: #800000;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.cart ion-icon {
+	vertical-align: bottom;
+	font-size: 20px;
+	padding-right: 5px;
+}
+
+.cart a {
+	background-color: #a52a2a;
+	color: #FFFFFF;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.container,
+.products-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	padding-bottom: 100px;;
+
+}
+
+.image {
+	margin-right: 20px;
+	margin-left: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.add-cart {
+	position: absolute;
+	width: 100%;
+	background-color: #800000;
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+	cursor: pointer;
+	text-align: center;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8,
+.image:hover .cart9,
+.image:hover .cart10,
+.image:hover .cart11,
+.image:hover .cart12 {
+	bottom: 50px;
+	opacity: 1;
+	padding: 10px;
+	text-decoration: none;
+}
+
